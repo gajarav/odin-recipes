@@ -1,0 +1,45 @@
+/* dropdown button */
+.dropbtn{
+    background-color: #8f53d4;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* div container */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/* dropdown content */
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: #bdabd1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* recipes links */
+.dropcontent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* hover changes */
+.dropcontent a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropcontent{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #5e17ad;
+}
