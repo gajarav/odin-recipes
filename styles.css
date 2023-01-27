@@ -1,45 +1,61 @@
-/* dropdown button */
-.dropbtn{
-    background-color: #8f53d4;
-    color: aliceblue;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* div container */
-.dropdown{
-    position: relative;
-    display: inline-block;
+body{
+    background-size: cover;
+    background-color: teal;
+}
+.menu-bar {
+    background-color: aqua;
+    text-align: center;
 }
 
-/* dropdown content */
-.dropcontent{
-    display: none;
-    position: absolute;
-    background-color: #bdabd1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* recipes links */
-.dropcontent a{
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
     color: black;
-    padding: 12px 16px;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
     text-decoration: none;
+    color: black;
+}
+
+.menu-bar ul li:hover{
+    background: grey;
+}
+
+.submenu-dessert{
+    display: none;
+
+}
+
+.menu-bar ul li:hover .submenu-dessert{
     display: block;
+    position: absolute;
+    background-color: aquamarine;
+    margin-top: 15px;
+    margin-left: -15px;
 }
-
-/* hover changes */
-.dropcontent a:hover{
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropcontent{
+.menu-bar ul li:hover .submenu-dessert ul{
     display: block;
+    margin: 10px;
 }
 
-.dropdown:hover .dropbtn{
-    background-color: #5e17ad;
+.menu-bar ul li:hover .submenu-dessert ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-dessert ul li a:hover{
+    color: blueviolet;
 }
