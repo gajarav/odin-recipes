@@ -6,10 +6,11 @@
 
 body{
     background-size: cover;
-    background-color: teal;
+    background-color: #EBC7E6;
+    font-family: 'Rubik', sans-serif;
 }
 .menu-bar {
-    background-color: aqua;
+    background-color: #BFACE2;
     text-align: center;
 }
 
@@ -19,7 +20,7 @@ body{
     color: black;
 }
 .menu-bar ul li{
-    width: 120px;
+    width: 130px;
     margin: 15px;
     padding: 15px;
 }
@@ -30,18 +31,24 @@ body{
 }
 
 .menu-bar ul li:hover{
-    background: grey;
+    background: #A084DC;
+    border-radius: 4px;
 }
 
+.logo{
+    float: left;
+    padding-left: 20px;
+}
+/* dessert styles */
 .submenu-dessert{
     display: none;
-
 }
 
 .menu-bar ul li:hover .submenu-dessert{
     display: block;
     position: absolute;
-    background-color: aquamarine;
+    border-radius: 4px;
+    background-color: #645CBB;
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -51,11 +58,127 @@ body{
 }
 
 .menu-bar ul li:hover .submenu-dessert ul li{
-    width: 150px;
+    width: 160px;
     padding: 10px;
     border-bottom: none;
 }
 
 .menu-bar ul li:hover .submenu-dessert ul li a:hover{
-    color: blueviolet;
+    color: #3e3881;
+}
+
+/*entrees styles*/
+.submenu-entrees{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-entrees{
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #645CBB;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu-entrees ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu-entrees ul li{
+    width: 160px;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-entrees ul li a:hover{
+    color: #3e3881;
+}
+
+/* main courses styles*/
+.submenu-maincourse{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-maincourse{
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #645CBB;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu-maincourse ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu-maincourse ul li{
+    width: 160px;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-maincourse ul li a:hover{
+    color: #3e3881;
+}
+
+/* salads styles */
+.submenu-salads{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-salads{
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #645CBB;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu-salads ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu-salads ul li{
+    width: 160px;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-salads ul li a:hover{
+    color: #3e3881;
+}
+
+/* snacks styles */
+.submenu-snacks{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-snacks{
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #645CBB;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu-snacks ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu-snacks ul li{
+    width: 160px;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-snacks ul li a:hover{
+    color: #3e3881;
 }
